@@ -10,7 +10,7 @@ public class EventHandler extends BaseHandler {
 			return null;
 		else
 			if("subscribe".equals(msgRequest.getEvent())){
-				return getResponseStringByContent("欢迎您关注瑰族，我将定期为您推荐一些经典美食、美食心得、美食做法。要知道，吃，是一种情怀。欢迎您加入吃货的世界。", msgRequest);
+				return getResponseStringByContent("欢迎关注李海波的个人公众平台，我会不定期的更新一些有关内容。", msgRequest);
 			}else if("CLICK".equals(msgRequest.getEvent())){
 				String eventKey = msgRequest.getEventKey();
 				String content = "";
